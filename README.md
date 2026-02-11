@@ -1,3 +1,4 @@
+```python
 from reportlab.lib.pagesizes import inch, letter
 from reportlab.pdfgen import canvas
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, HRFlowable
@@ -76,7 +77,7 @@ def create_interior():
         "PART 7 – Sirrin Wasiƙa": "A wasiyyar ta ƙarshe ta bayyana cewa ba ita ta haife shi ba. Ta zabe shi a matsayin danta."
     }
     for t, c in story.items():
-        elements.append(Paragraph(t, section_s))
+        elements.append(Pragraph(t, section_s))
         elements.append(HRFlowable(width="100%", thickness=1, color=colors.grey))
         elements.append(Paragraph(c, normal_s))
         elements.append(Spacer(1, 0.3*inch))
@@ -106,3 +107,4 @@ if __name__ == "__main__":
     create_cover()
     create_interior()
     merge_all()
+```
